@@ -18,7 +18,7 @@ A simple drag-and-drop image processor built using wxPython and Pillow. It allow
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/image-processor.git
+    git clone https://github.com/samto6/image-processor.git
     cd image-processor
     ```
 
