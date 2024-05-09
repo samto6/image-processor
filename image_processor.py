@@ -8,7 +8,7 @@ class Mywin(wx.Frame):
         super(Mywin, self).__init__(parent, title=title, size=(400, 400))
 
         panel = wx.Panel(self)
-        wx.StaticText(panel, label="Drag and drop image file here", pos=(60, 60))
+        wx.StaticText(panel, label="Drag and drop image file(s) here", pos=(60, 60))
 
         self.resize_checkbox = wx.CheckBox(panel, label="Resize Image?", pos=(60, 160))
         self.resize_checkbox.Bind(wx.EVT_CHECKBOX, self.on_resize_check)
@@ -79,7 +79,7 @@ class MyFileDropTarget(wx.FileDropTarget):
             # Log each processed file
             print(f"Processed file: {new_filename} with quality {quality}")
 
-        wx.MessageBox("All photos have been processed successfully!", "Process Complete", wx.OK | wx.ICON_INFORMATION)
+        wx.MessageBox("Processed successfully!", "Process Complete", wx.OK | wx.ICON_INFORMATION)
 
         return True
 
